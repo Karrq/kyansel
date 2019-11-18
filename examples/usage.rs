@@ -1,5 +1,5 @@
 use futures::future::{Future, IntoFuture};
-use kyansel::FutureExt;
+use kyansel::FutureCancellable;
 use tokio::{sync::oneshot, timer::Delay};
 
 fn main() {
