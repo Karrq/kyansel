@@ -8,6 +8,7 @@ keywords = ["futures", "task", "cancel", "abort"]
 documentation = "https://docs.rs/kyansel/0.1.0"
 repository = "https://github.com/Karrq/kyansel"
 homepage = "https://github.com/Karrq/kyansel"
+description = "Cancellable future. Provide a future as argument and the current future will cancel if the provided future resolves first"
 
 [dependencies]
 futures = "0.1"
