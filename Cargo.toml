@@ -1,0 +1,16 @@
+[package]
+name = "kyansel"
+version = "0.1.0"
+authors = ["Francesco Dainese <franci.dainese@gmail.com>"]
+edition = "2018"
+license = "Apache-2.0/MIT"
+keywords = ["futures", "task", "cancel", "abort"]
+documentation = "https://docs.rs/kyansel/0.1.0"
+repository = "https://github.com/Karrq/kyansel"
+homepage = "https://github.com/Karrq/kyansel"
+
+[dependencies]
+futures = "0.1"
+
+[dev-dependencies]
+tokio = { version = "0.1", features = ["sync"] }
