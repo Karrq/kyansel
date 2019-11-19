@@ -1,11 +1,11 @@
 [package]
 name = "kyansel"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Francesco Dainese <franci.dainese@gmail.com>"]
 edition = "2018"
 license = "Apache-2.0/MIT"
-keywords = ["futures", "task", "cancel", "abort"]
-documentation = "https://docs.rs/kyansel/0.1.0"
+keywords = ["futures", "task", "cancel", "abort", "no_std"]
+documentation = "https://docs.rs/kyansel/0.2.1"
 repository = "https://github.com/Karrq/kyansel"
 homepage = "https://github.com/Karrq/kyansel"
 description = "Cancellable future. Provide a future as argument and the current future will cancel if the provided future resolves first"
