@@ -14,7 +14,7 @@ description = "Cancellable future. Provide a future as argument and the current 
 futures_01 = ["futures01"]
 
 [dependencies]
-futures01 = { version = "0.1", optional = true, package = "futures" }
+futures01 = { version = "0.1", optional = true, package = "futures", default-features = false }
 pin-project-lite = "0.1.1"
 
 [dev-dependencies]

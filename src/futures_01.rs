@@ -4,6 +4,8 @@ use futures01::{Async, Future, Poll};
 ///if a second computation completes succesfully.
 ///
 ///Created with [`FutureCancellable::cancel_with`](trait.FutureCancellable.html#method.cancel_with)
+#[derive(Debug)]
+#[must_use = "futures do nothing unless polled"]
 pub struct Cancellable<F, S>
 where
     F: Future,
