@@ -1,23 +1,19 @@
 [package]
 name = "kyansel"
-version = "0.2.1"
+version = "0.3.0"
 authors = ["Francesco Dainese <franci.dainese@gmail.com>"]
 edition = "2018"
 license = "Apache-2.0/MIT"
 keywords = ["futures", "task", "cancel", "abort", "no_std"]
-documentation = "https://docs.rs/kyansel/0.2.1"
+documentation = "https://docs.rs/kyansel/0.3.0"
 repository = "https://github.com/Karrq/kyansel"
 homepage = "https://github.com/Karrq/kyansel"
 description = "Cancellable future. Provide a future as argument and the current future will cancel if the provided future resolves first"
 
-[features]
-futures_01 = ["futures01"]
-
 [dependencies]
-futures01 = { version = "0.1", optional = true, package = "futures", default-features = false }
-pin-project-lite = "0.1.1"
+futures_01 = { version = "0.1", optional = true, package = "futures", default-features = false }
 
 [dev-dependencies]
 tokio = { version = "0.2.0-alpha.6", features = ["sync"] }
-futures = "0.3.1"
-tokio01 = { version = "0.1", features = ["sync"], package = "tokio" }
+futures = "0.3"
+tokio_01 = { version = "0.1", features = ["sync"], package = "tokio" }
